@@ -1,0 +1,122 @@
+/* src/app/modules/part-master/components/main-window/main-window.component.scss */
+
+/* Main window styles */
+.main-window {
+  width: 609px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.main-window__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styles */
+.main-window__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Field styles */
+.main-window__field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main-window__field label {
+  font-size: 14px;
+  color: #666;
+}
+
+.main-window__field input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styles */
+.main-window__buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.main-window__button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-window__button--save {
+  background-color: #28a745;
+}
+
+.main-window__button--clear {
+  background-color: #ffc107;
+}
+
+.main-window__button--edit {
+  background-color: #17a2b8;
+}
+
+.main-window__button--exit {
+  background-color: #dc3545;
+}
+
+.main-window__button:hover {
+  opacity: 0.9;
+}
+
+/* Specific field styles */
+.main-window__field--sysdate input {
+  text-transform: uppercase;
+}
+
+.main-window__field--screenname input {
+  text-transform: uppercase;
+}
+
+.main-window__field--mode input {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.main-window__field--unit-id input,
+.main-window__field--unit-name input,
+.main-window__field--group-id input,
+.main-window__field--group-name input,
+.main-window__field--line-id input,
+.main-window__field--line-desc input,
+.main-window__field--part-id input,
+.main-window__field--partno input,
+.main-window__field--part-desc input,
+.main-window__field--part-status input {
+  text-transform: uppercase;
+}
+
+.main-window__field--part-status input {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
